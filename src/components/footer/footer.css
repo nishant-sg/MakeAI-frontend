@@ -1,0 +1,5 @@
+.footer--main{
+    min-height: 200px;
+    height: fit-content;
+    border: 2px solid black;
+}

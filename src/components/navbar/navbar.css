@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 10vh;
-    background-color: black;
+    height: 6rem;
     display: flex;
     flex-direction: row;
     align-items: center;
