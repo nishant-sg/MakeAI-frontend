@@ -2,3 +2,27 @@
     max-height: fit-content;
     
 }
+
+.homepage--games{
+    overflow: hidden;
+    min-height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.homepage--tutorial{
+    min-height: 60vh;
+    border: 1px solid black;
+    
+}
+.homepage--about{
+    min-height: 60vh;
+    border: 1px solid black;
+    
+}
+.homepage--leaderboard{
+    min-height: 60vh;
+    border: 1px solid black;
+    
+}

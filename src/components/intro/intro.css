@@ -1,4 +1,15 @@
 .intro--main{
     height: 90vh;
+    display:flex;
     background: linear-gradient(90deg, hsla(192, 91%, 26%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+}
+
+.intro--model{
+    height: 100%;
+    width : 50vw;
+}
+.intro--title{
+    
+    height: 100%;
+    width : 50vw;
 }

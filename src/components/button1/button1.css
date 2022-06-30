@@ -1,0 +1,7 @@
+.button1--main{
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius:15px ;
+    width: 8rem;
+    margin-left: 1rem;
+}

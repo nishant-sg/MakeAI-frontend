@@ -1,20 +1,26 @@
-.nav {
+.nav--main {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 6rem;
+    background-color: antiquewhite;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-
-.nav-buttons {
+.nav--logo {
+    height: 100%;
+    border: 2px solid black;
+}
+.nav--buttons {
+    border: 2px solid black;
     display: flex;
     height: 100%;
-    width: 50%;
+    min-width: 30%;
+    width: fit-content; 
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
 }
 

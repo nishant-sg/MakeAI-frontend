@@ -1,5 +1,7 @@
 import './navbar.css';
 import react from 'react';
+import Button1 from '../button1/button1'
+import Button2 from '../button2/button2'
 import { useState } from 'react';
 
 function Navbar() {
@@ -17,15 +19,12 @@ function Navbar() {
 
     return (
         <>
-            <div className='nav'>
-                <div className='nav-logo'><h1>navbar</h1></div>
-                <div className='nav-buttons'>
-                    <div className='dark-Mode-button'>dark mode</div>
-                    <div className='inactive-button' onClick={() => { deactivateAllButtons(); setButton1(true) }}><div className={button1 ? 'bg-button-active' : 'bg-button-inactive'} /></div>
-                    <div className='inactive-button' onClick={() => { deactivateAllButtons(); setButton2(true) }}><div className={button2 ? 'bg-button-active' : 'bg-button-inactive'} /></div>
-                    <div className='inactive-button' onClick={() => { deactivateAllButtons(); setButton3(true) }}><div className={button3 ? 'bg-button-active' : 'bg-button-inactive'} /></div>
-                    <div className='inactive-button' onClick={() => { deactivateAllButtons(); setButton4(true) }}><div className={button4 ? 'bg-button-active' : 'bg-button-inactive'} /></div>
-
+            <div className='nav--main'>
+                <div className='nav--logo'><h1>navbar</h1></div>
+                <div className='nav--buttons'>
+                    <Button1 title="Sign Up!"/>
+                    <Button1 title="Login"/>
+                    
                 </div>
             </div>
 
