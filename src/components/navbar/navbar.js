@@ -22,8 +22,8 @@ function Navbar() {
             <div className='nav--main'>
                 <div className='nav--logo'><h1>navbar</h1></div>
                 <div className='nav--buttons'>
-                    <Button1 title="Sign Up!"/>
-                    <Button1 title="Login"/>
+                    <Button1 title="Sign Up!" to="/signup"/>
+                    <Button1 title="Login" to="/signin"/>
                     
                 </div>
             </div>
