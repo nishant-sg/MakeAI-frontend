@@ -1,0 +1,66 @@
+.NetworkDesigner{
+    background-color: rgb(233, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Layer{
+    width: fit-content;
+    height: 80vh;
+    min-height: fit-content;
+    display: flex;
+    border: 2px solid;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Nueron{
+    background-color: rgb(78, 186, 219);
+    border-radius: 100%;
+    margin-top: 5px;
+    border: 3px solid;
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.NeuronIncrementor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NeuronIncrementor input{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 15px;
+    border: None;
+    background-color: rgba(27, 101, 165, 0);
+}
+
+.NeuronIncrementor button{
+    height: 20px;
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 15px;
+}
+
+.board {
+    border: 0px solid;
+}

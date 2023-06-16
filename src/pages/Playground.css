@@ -1,0 +1,9 @@
+.Playground{
+    background-color: rgb(196, 204, 204);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

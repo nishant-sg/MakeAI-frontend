@@ -1,0 +1,78 @@
+import './NetworkDesigner.css';
+import React, { useState,useEffect,useCallback} from "react";function Nueron() {
+    return (
+      <div className="Nueron">
+          
+      </div>
+    );
+  }
+
+function Layer() {
+    const [neurons, setNeurons] = useState(1); 
+    return (
+      <div className="Layer">
+        <div className='NeuronIncrementor'>
+        <button onClick={()=>{setNeurons(neurons-1)}}>-</button>
+        <input value={neurons} onChange={(e)=>{setNeurons(Number(e.target.value))}}/>
+        <button onClick={()=>{setNeurons(neurons+1)}}>+</button>
+        </div>
+        {Array.from({ length: neurons }, (_, i) => <Nueron/>)}
+      </div>
+    );
+  }
+
+  
+  function NetworkDesigner() {
+    const [layers, setLayers] = useState(2); 
+    const h = 600;
+    const w = 800;
+    
+  const [network, setNetwork] = useState([
+    {layer:1,neuron:1},
+    {layer:2,neuron:3},
+    {layer:3,neuron:2},
+    {layer:4,neuron:3},
+    {layer:5,neuron:2},
+  ]); 
+  const [graph,setGraph]= useState([{a:0,b:100,c:0,d:200}]); 
+  let newele;
+  var paths=[];
+  // useEffect(()=>{
+    for (let i = 1;i<5;i++){
+      newele = {a:i*100,b:100,c:200,d:200};
+      console.log(newele);
+      paths.push(
+        <path d={"M "+(newele.a).toString()+" "+(newele.b).toString() +" L " +(newele.c).toString()+" " +(newele.d).toString()} stroke="blue" />
+      );
+      // setGraph([...graph,newele]);
+      // addTodo(); 
+    }
+      console.log("graph",graph.length);
+  // },[])
+  
+
+
+
+  return (
+    <div className="NetworkDesigner">
+      
+      <div className='NeuronIncrementor'>
+      <button onClick={()=>{setLayers(layers-1)}}>-</button>
+        <input value={layers} onChange={(e)=>{setLayers(Number(e.target.value))}}/>
+        <button onClick={()=>{setLayers(layers+1)}}>+</button>
+        </div>
+      <svg className='board' width={w} height={h}>
+      {network.map((element,index)=>(
+      
+      Array.from({ length: element.neuron }, (_, i) => 
+      <circle cx={element.layer*100} cy={(h-(element.neuron-1)*Math.min(60,(h/ element.neuron)))/2+i*Math.min(60,(h/ element.neuron+1))} fill='aqua' r = "15"/>
+    )          
+        ))
+      }
+      {paths}
+      </svg>
+    </div>
+  );
+}
+
+export default NetworkDesigner;
