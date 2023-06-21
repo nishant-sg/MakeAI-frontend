@@ -33,7 +33,14 @@ function Authentication() {
           </div>
           <div>Forget Password</div>
         </div>
-        <div className="login-btn">LOGIN</div>
+        <div
+          className="login-btn"
+          onClick={() => {
+            alert("hello");
+          }}
+        >
+          LOGIN
+        </div>
         <div className="account-text">Dont have an Account? SignUp</div>
       </div>
     </div>
